@@ -1,0 +1,23 @@
+Use Open Library for cover images
+https://openlibrary.org/developers/api
+https://openlibrary.org/dev/docs/api/books
+
+Use Google API for books for info like synopsis (missing in Open Library)
+No key is needed unless you want to store user specific info like books purchased.
+https://www.googleapis.com/books/v1/volumes?q=mockingjay  // returns books with mockingjay
+https://www.googleapis.com/books/v1/volumes/P2hFzgEACAAJ  // returns specific book details
+https://developers.google.com/books/docs/v1/using
+
+https://rachelaemmer.medium.com/how-to-use-the-google-books-api-in-your-application-17a0ed7fa857
+https://www.freecodecamp.org/news/build-a-best-sellers-list-with-new-york-times-google-books-api-46201c30aec7/
+
+https://jasonwatmore.com/post/2019/09/06/angular-http-get-request-examples
+
+Curated reading list example:
+https://k-12readinglist.com/reading-lists-for-high-school-students/reading-list-for-9th-grade-students-age-14-15/
+https://www.kidsbookseries.com/list/sorted-by-accelerated-reader-level
+
+https://www.kidsbookseries.com/general/aboutus
+
+Similar API to books, movie DB:
+https://developers.themoviedb.org/3/movies/get-movie-details

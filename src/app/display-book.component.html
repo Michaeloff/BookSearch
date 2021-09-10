@@ -1,0 +1,19 @@
+<div (click)="startNewSearch()" class="col s4 offset-s4 search-btn center-align">
+    <span class="material-icons">search</span>
+</div>
+<div *ngIf="bookSelected" class="row valign-wrapper">
+    <div class="col m9 s12">
+        <h3 class="fade-in-right fast">{{ bookSelected.title }}</h3>
+        <div class="row">
+            <div class="flow-text col m3 fade-in-right slow">
+                {{ bookSelected.publish_date }}
+            </div>
+        </div>
+        <div class="row">
+            <p class="book-description flow-text col s12 fade-in-left fast" [innerHTML]="bookSelected.overview"></p>
+        </div>
+    </div>
+    <div class="col m3">
+        <img [src]="bookSelected.posterUrl" [alt]="bookSelected.title" class="book-poster fade-in-left slow">
+    </div>
+</div>

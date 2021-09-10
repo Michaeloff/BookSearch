@@ -1,0 +1,17 @@
+<div class="col s12">
+    <input type="text" class="search-input" placeholder="Find a Book" [(ngModel)]="search" [myFocus]="true"
+    (input)="search$.next(search)">
+    <div class="row">
+        <book-preview 
+        *ngFor="let book of searchResults; let i=index" 
+        (click)="setCurrentBook(book)"
+        [book]="book"
+        [index]="i"
+        [newSearch]="newSearch">
+        </book-preview>
+
+        <h3 
+        *ngIf="!fetching && searchResults.length === 0 && search.length > 0"
+        [ngStyle]="{'text-align':'center'}"> No Results Found for {{search}}</h3>
+    </div>
+</div>

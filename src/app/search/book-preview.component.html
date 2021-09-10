@@ -1,0 +1,8 @@
+<div [ngClass]="{'col s12 m3':true, 'bookSlide':newSearch}" [ngStyle]="animationDelay()">
+    <div class="card blue-grey darken-1" [ngStyle]="backdropStyle()">
+        <div class="card-content white-text">
+            <span class="card-title">{{ book.title }}</span>
+            <div class="book-year">{{ book.publish_date }}</div>
+        </div>
+    </div>
+</div>
